@@ -39,7 +39,6 @@ This script is written to audit kubernetes security refer to CIS `CIS_Kubernetes
 - demo
 
   ```
-  [WARN] all [current: feature gates not set]
   #### master_configuration_file_permission_audit ####
   [PASS] 1.1.1 Ensure that the API server pod specification file permissions are set to 644 or more restrictive
   [PASS] 1.1.2 Ensure that the API server pod specification file ownership is set to root:root

@@ -19,6 +19,3 @@ kube_controller_manager_arg_rotatekubeletservercertificate(){
     done
    echo -e $(show warn ${chapter} "feature gates RotateKubeletServerCertificate not set")
 }
-if [[ "$#" != "2" ]];then 
-    kube_controller_manager_arg_rotatekubeletservercertificate $1 $2
-fi
