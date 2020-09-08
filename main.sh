@@ -56,7 +56,7 @@ function kube_apiserver_audit(){
     check_args_and_values "1.2.18" "${process_name}" "check_name" "--insecure-bind-address" "is_none"
     check_args_and_values "1.2.19" "${process_name}" "check_value" "--insecure-port" "match" "0"
     check_args_and_values "1.2.20" "${process_name}" "check_value" "--secure-port" "not_match" "0"
-    check_args_and_values "1.2.21" "${process_name}" "check_value" "--secure-port" "match" "false"
+    check_args_and_values "1.2.21" "${process_name}" "check_value" "--profiling" "match" "false"
     check_args_and_values "1.2.22" "${process_name}" "check_name" "--audit-log-path" "not_none"
     check_args_and_values "1.2.23" "${process_name}" "check_name" "--audit-log-maxage" "not_none"
     check_args_and_values "1.2.24" "${process_name}" "check_name" "--audit-log-maxbackup" "not_none"

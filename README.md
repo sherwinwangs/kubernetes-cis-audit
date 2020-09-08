@@ -1,5 +1,7 @@
 ## Kubernetes cis audit script
 
+Auditing & Hardening script for Kubernetes
+
 This script is written to audit kubernetes security refer to CIS `CIS_Kubernetes_Benchmark_v1.6.0.pdf`
 
 - Usage
