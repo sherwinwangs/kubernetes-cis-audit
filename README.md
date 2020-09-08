@@ -68,7 +68,7 @@ Status
 [WARN] 1.1.20 (level 1) Ensure that the Kubernetes PKI certificate file permissions are set to 644 or more restrictive [current: 755]
 [WARN] 1.1.21 (level 1) Ensure that the Kubernetes PKI key file permissions are set to 600 [current: 755]
 #### kube_apiserver_audit ####
-[WARN] 1.2.1 (level 1) Ensure that the --anonymous-auth argument is set to false (Manual) [current: false]
+[PASS] 1.2.1 (level 1) Ensure that the --anonymous-auth argument is set to false (Manual) 
 [WARN] 1.2.2 (level 1) Ensure that the --basic-auth-file argument is not set (Automated) [current: is set]
 [PASS] 1.2.3 (level 1) Ensure that the --token-auth-file parameter is not set (Automated)
 [PASS] 1.2.4 (level 1) Ensure that the --kubelet-https argument is set to true (Automated)

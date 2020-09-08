@@ -35,7 +35,7 @@ function kube_apiserver_audit(){
     echo "#### kube_apiserver_audit ####"
     process_name="kube-apiserver"
     if [ "$(detect_process_and_args ${process_name};echo $?)" != "0" ];then echo -e $(show erro "${process_name} is not running, all item about this components ignored");return 1;fi
-    check_args_and_values "1.2.1" "${process_name}" "check_value" "--anonymous-auth" "match" "true"
+    check_args_and_values "1.2.1" "${process_name}" "check_value" "--anonymous-auth" "match" "false"
     check_args_and_values "1.2.2" "${process_name}" "check_name" "--anonymous-auth" "is_none"
     check_args_and_values "1.2.3" "${process_name}" "check_name" "--token-auth-file" "is_none"
     check_args_and_values "1.2.4" "${process_name}" "check_value" "--kubelet-https" "match" "true"
